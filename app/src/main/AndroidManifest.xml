@@ -20,10 +20,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.shamsad.materialdesign.MainActivity" />
         </activity>
-        <activity
-            android:name=".NavigationDrawerActivity"
-            android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

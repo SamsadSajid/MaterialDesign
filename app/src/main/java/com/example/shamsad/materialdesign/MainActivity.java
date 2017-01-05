@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity  {
 
         toolbar =(android.support.v7.widget.Toolbar)findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);  //Rather than using system's toolbar, newly created toolbar is gonna use.
+
     }
 
 
