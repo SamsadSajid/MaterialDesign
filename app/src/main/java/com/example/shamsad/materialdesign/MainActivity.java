@@ -1,6 +1,7 @@
 package com.example.shamsad.materialdesign;
 
 import android.content.Intent;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,14 @@ public class MainActivity extends AppCompatActivity  {
 
         toolbar =(android.support.v7.widget.Toolbar)findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);  //Rather than using system's toolbar, newly created toolbar is gonna use.
+
+        getSupportActionBar().setHomeButtonEnabled(true);
+
+        NavigationDrawerFragment navigationDrawerFragment = (NavigationDrawerFragment)
+                getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
+
+        navigationDrawerFragment.setUp(R.id.fragment_navigation_drawer,
+                (DrawerLayout) findViewById(R.id.drawer_layout),toolbar);
 
     }
 
